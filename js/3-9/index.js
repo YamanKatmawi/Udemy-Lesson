@@ -4,3 +4,4 @@ let age = prompt("whats is your age?");
 let fullName = firstName + " " + lastName;
 console.log("your full name is " + fullName);
 console.log("your are " + age + " years old");
+///////
