@@ -1,0 +1,39 @@
+let movies = [
+  { title: "In Bruges", hasWatched: true, rating: 5 },
+  {
+    title: "Frozen",
+    hasWatched: false,
+    ratings: 4.5,
+  },
+  {
+    title: "Les Miserable",
+    hasWatched: false,
+    rating: 3.5,
+  },
+];
+movies.forEach(function (movie) {
+  let result = "You have ";
+  if (movie.hasWatched) {
+    result += "watched";
+  } else {
+    result += "not seen ";
+  }
+  result += '"' + movie.title + '" - ';
+  result += movie.rating + " stars ";
+  console.log(result);
+});
+/////
+function buildString(movie) {
+  let result = "You have ";
+  if (movie.hasWatched) {
+    result += "watched";
+  } else {
+    result += "not seen ";
+  }
+  result += '"' + movie.title + '" - ';
+  result += movie.rating + " stars ";
+  return result;
+}
+movies.forEach(function (movie) {
+  console.log(buildString(movie));
+});
