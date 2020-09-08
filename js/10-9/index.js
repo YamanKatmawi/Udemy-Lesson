@@ -13,3 +13,25 @@ numbers.forEach(function (color) {
     console.log(color);
   }
 });
+//////////
+let nums = [45, 65, 77, 34];
+nums.forEach(function (num) {
+  console.log(num);
+});
+/////
+function myForEach(arr, func) {
+  // loop through arry
+  for (let i = 0; i < arr.length; i++) {
+    func(arr[i]);
+  }
+}
+///////////
+myForEach(colors, function (color) {
+  console.log(color);
+});
+//
+// Array.prototype.myForEach = function (func) {
+//   for (let i = 0; i < this.length; i++) {
+//     func(this[i]);
+//   }
+// };
