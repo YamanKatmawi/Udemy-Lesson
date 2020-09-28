@@ -13,6 +13,15 @@ class Hello extends Component {
     /// ARO FUNCTION
     this.setState({ age: this.state.age - 1 });
   };
+  updateName(event) {
+    let newName = event.target.value;
+    this.setState({
+      user: {
+        ...this.state.user,
+        name: newName,
+      },
+    });
+  }
 
   render() {
     return (
@@ -29,6 +38,12 @@ class Hello extends Component {
           Increase
         </button>
         <button onClick={this.decrement}>Decrease</button>
+        <br />
+        <input
+          type="text"
+          value={this.state.user.name}
+          onChange={this.updateName.bind(this)}
+        ></input>
       </div>
     );
   }
