@@ -1,6 +1,7 @@
 import React from "react";
 import Welcome from "./ components /welcome";
 import Hello from "./ components /hello";
+import Lists from "./ components /lists";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         Description
       </Welcome>
       <Hello name="yaman" />
+      <Lists />
     </div>
   );
 }
