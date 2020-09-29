@@ -1,7 +1,7 @@
 import React from "react";
 
 function List(props) {
-  const age = 21;
+  let age = 21;
   return (
     <div>
       {age > 12 ? (
