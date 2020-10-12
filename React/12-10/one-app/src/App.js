@@ -7,6 +7,7 @@ class App extends Component {
     value: "Default",
     selectValue: "2",
     checked: true,
+    radioValue: "2",
   };
 
   setValue = (event) => {
@@ -25,12 +26,17 @@ class App extends Component {
     });
   };
 
+  changeRadio = (event) => {
+    this.setState({
+      radioValue: event.target.value,
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <input value={this.state.value} onChange={this.setValue} />
         <hr />
-
         <textarea value={this.state.value} onChange={this.setValue} />
         <hr />
         <select value={this.state.selectValue} onChange={this.setSelectValue}>
@@ -38,12 +44,29 @@ class App extends Component {
           <option value="2">two</option>
         </select>
         <hr />
-        <label>Change checkbox</label>
-        <input
-          type="checkbox"
-          checked={this.state.checked}
-          onChange={this.setCheckboxValue}
-        />
+        <label>
+          Change checkbox
+          <input
+            type="checkbox"
+            checked={this.state.checked}
+            onChange={this.setCheckboxValue}
+          />
+        </label>
+        <hr />
+        <div onChange={this.changeRadio}>
+          <input
+            type="radio"
+            value="1"
+            checked={this.state.radioValue == "1"}
+          />
+          one
+          <input
+            type="radio"
+            value="2"
+            checked={this.state.radioValue == "2"}
+          />
+          two
+        </div>
       </div>
     );
   }
