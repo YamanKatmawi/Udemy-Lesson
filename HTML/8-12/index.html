@@ -3,7 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Table Part3</title>
   </head>
-  <body></body>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid #676767;
+    }
+    table {
+      width: 500px;
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        Describe The colspan
+      </caption>
+      <tr>
+        <th colspan="2">Programming</th>
+        <th colspan="3">Web Design</th>
+      </tr>
+      <tr>
+        <td>PHP</td>
+        <td>My SQL</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>JQuery</td>
+      </tr>
+    </table>
+    <table>
+      <caption>
+        Describe The Rowspan
+      </caption>
+      <tr>
+        <td>Name</td>
+        <td>Emails</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Yaman</td>
+        <td>Y@email.com</td>
+      </tr>
+      <tr>
+        <td>Y@email.com</td>
+      </tr>
+      <tr>
+        <td>Y@email.com</td>
+      </tr>
+      <tr>
+        <td>Ahmad</td>
+        <td>A@email.com</td>
+      </tr>
+    </table>
+  </body>
 </html>
