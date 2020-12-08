@@ -10,64 +10,91 @@
       alert("Hello HTML");
     }
   </script>
+  <style>
+    fieldset {
+      background-color: #efffef;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    legend {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  </style>
   <body>
     <form action="post.php" name="register">
-      <label for="">User Name</label>
-      <input
-        type="text"
-        name="username"
-        value=""
-        placeholder="type your Name"
-      />
-      <br />
-      <label for="">Password</label>
-      <input type="password" name="password" />
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="">User Name</label>
+        <input
+          type="text"
+          name="username"
+          value=""
+          placeholder="type your Name"
+        />
+        <br />
+        <label for="">Password</label>
+        <input type="password" name="password" />
+        <br />
+
+        <label for="">Your Message</label>
+        <br />
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br />
+        <label for="">Upload Your Cv</label>
+        <input type="file" name="" id="" />
+        <br />
+        <input type="checkbox" />
+        <label for="">Remember Me</label>
+        <br />
+      </fieldset>
       <br />
 
-      <label for="">Upload Your Cv</label>
-      <input type="file" name="" id="" />
-      <br />
-      <input type="checkbox" />
-      <label for="">Remember Me</label>
-      <br />
-      <label for="">Choose Your Browser </label>
-      <br />
-      <input type="radio" name="browser" id="" value="Chrome" /> Google Chrome
-      <br />
-      <input type="radio" name="browser" id="" value="Firefox" /> Mozilla
-      Firefox <br />
+      <fieldset>
+        <legend>Your Favourite</legend>
+        <label for="">Choose Your Browser </label>
+        <br />
+        <input type="radio" name="browser" id="" value="Chrome" /> Google Chrome
+        <br />
+        <input type="radio" name="browser" id="" value="Firefox" /> Mozilla
+        Firefox <br />
 
-      <input type="radio" name="browser" id="" value="Opera" /> Opera
-      <br />
-      <label for="">Choose Your Phone </label>
-      <br />
-      <input type="radio" name="mobile" id="" value="iPhone" /> iPhone
-      <br />
-      <input type="radio" name="mobile" id="" value="Samsung" /> Samsung <br />
+        <input type="radio" name="browser" id="" value="Opera" /> Opera
+        <br />
+        <label for="">Choose Your Phone </label>
+        <br />
+        <input type="radio" name="mobile" id="" value="iPhone" /> iPhone
+        <br />
+        <input type="radio" name="mobile" id="" value="Samsung" /> Samsung
+        <br />
 
-      <input type="radio" name="mobile" id="" value="Nokia" /> Nokia
-      <br />
+        <input type="radio" name="mobile" id="" value="Nokia" /> Nokia
+        <br />
+      </fieldset>
       <br />
 
-      <input type="hidden" name="" id="" value="testing" />
-      <input
-        type="button"
-        name="Say Hallo"
-        id=""
-        value="Say Hallo"
-        onclick="sayHello()"
-      />
-      <br />
-      <input type="submit" name="" id="" value="sign in" />
-      <input type="reset" name="" id="" value="Restore Default" />
+      <fieldset>
+        <legend>Send Option</legend>
 
-      <input
-        type="image"
-        src="http://placehold.it/100/100"
-        alt="submit"
-        name=""
-        id=""
-      />
+        <select name="time" id="">
+          <optgroup label="Near time">
+            <option value="">Now</option>
+            <option value="">Tomorrow</option>
+            <option value="">After a week</option>
+          </optgroup>
+        </select>
+        <input
+          type="button"
+          name="Say Hallo"
+          id=""
+          value="Say Hallo"
+          onclick="sayHello()"
+        />
+        <input type="submit" name="" id="" value="sign in" />
+        <input type="reset" name="" id="" value="Restore Default" />
+      </fieldset>
     </form>
   </body>
 </html>
