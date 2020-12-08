@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
+  <script>
+    function sayHello() {
+      alert("Hello HTML");
+    }
+  </script>
   <body>
     <form action="post.php" name="register">
       <label for="">User Name</label>
@@ -18,10 +23,51 @@
       <label for="">Password</label>
       <input type="password" name="password" />
       <br />
+
+      <label for="">Upload Your Cv</label>
+      <input type="file" name="" id="" />
+      <br />
       <input type="checkbox" />
       <label for="">Remember Me</label>
       <br />
+      <label for="">Choose Your Browser </label>
+      <br />
+      <input type="radio" name="browser" id="" value="Chrome" /> Google Chrome
+      <br />
+      <input type="radio" name="browser" id="" value="Firefox" /> Mozilla
+      Firefox <br />
+
+      <input type="radio" name="browser" id="" value="Opera" /> Opera
+      <br />
+      <label for="">Choose Your Phone </label>
+      <br />
+      <input type="radio" name="mobile" id="" value="iPhone" /> iPhone
+      <br />
+      <input type="radio" name="mobile" id="" value="Samsung" /> Samsung <br />
+
+      <input type="radio" name="mobile" id="" value="Nokia" /> Nokia
+      <br />
+      <br />
+
+      <input type="hidden" name="" id="" value="testing" />
+      <input
+        type="button"
+        name="Say Hallo"
+        id=""
+        value="Say Hallo"
+        onclick="sayHello()"
+      />
+      <br />
       <input type="submit" name="" id="" value="sign in" />
+      <input type="reset" name="" id="" value="Restore Default" />
+
+      <input
+        type="image"
+        src="http://placehold.it/100/100"
+        alt="submit"
+        name=""
+        id=""
+      />
     </form>
   </body>
 </html>
