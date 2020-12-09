@@ -4,6 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Example</title>
+    <style>
+      body {
+        background-color: #ddd;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      fieldset {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      legend {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        padding: 5px;
+        width: 300px;
+        display: block;
+      }
+      hr {
+        border: 1px solid #eee;
+      }
+      textarea {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="">User Name</label>
+        <input type="text" name="Username" id="" />
+        <label for="">Password</label>
+        <input type="password" name="password" id="" />
+        <label for="">E-mail</label>
+        <input type="text" name="email" id="" />
+        <label for="">Gender</label>
+        <select name="gender" id="">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your Favourites</legend>
+        <label for="">Your Favourites Text Editor </label>
+        <input type="radio" name="editor" id="" />KomodoEdit <br />
+        <input type="radio" name="editor" id="" />Netbeans <br />
+        <input type="radio" name="editor" id="" />Sublime Text
+
+        <hr />
+        <label for="">Your Favourites Text Browser </label>
+        <input type="radio" name="Browser" id="" />Google chrome <br />
+        <input type="radio" name="Browser" id="" />Mozilla Firefox <br />
+        <input type="radio" name="Browser" id="" />Opera
+        <hr />
+        <label for="">Your Favourites Operating System </label>
+        <input type="checkbox" id="" />Mac OSX <br />
+        <input type="checkbox" id="" />linux <br />
+        <input type="checkbox" id="" />Windows
+      </fieldset>
+      <fieldset>
+        <legend>Your Message</legend>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" name="" id="" value="send your Data" />
+      </fieldset>
+    </form>
+  </body>
 </html>
