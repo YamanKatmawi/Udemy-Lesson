@@ -11,7 +11,40 @@ div {
   padding: 10px;
   line-height: 50px;
   text-align: center;
+  text-indent: 20px;
+  white-space: normal;
+  word-spacing: normal;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 div.ar {
   direction: rtl;
 }
+div span {
+  text-decoration: line-through;
+}
+span.old {
+  text-decoration: line-through;
+  color: red;
+}
+span.new {
+  color: blue;
+}
+span.cap {
+  text-transform: capitalize;
+}
+span.upper {
+  text-transform: uppercase;
+  word-spacing: 20px;
+  letter-spacing: 10px;
+}
+span.lower {
+  text-transform: lowercase;
+}
+
+/* text-decoration / text-indent / text-transform / white-space / word-spacing */
+/* Today i study  */
