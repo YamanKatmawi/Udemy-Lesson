@@ -1,0 +1,17 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  width: 500px;
+  background-color: #ddd;
+  color: #ff0000;
+  margin: 10px 0;
+  padding: 10px;
+  line-height: 50px;
+  text-align: center;
+}
+div.ar {
+  direction: rtl;
+}
